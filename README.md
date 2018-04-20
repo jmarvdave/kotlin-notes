@@ -17,8 +17,11 @@ Employee employee3 = new Employee(“John”, 2);
 Would evaluate like so:
 
 `false`: `employee1 == employee2` <- checks for equality referentially. I.e. Is this the same reference?
+
 `false` : `employee2 == employee3` <- checks for equality referentially. I.e. Is this the same reference?
+
 `false` : `employee1.equals(employee2)` <- checks for equality structurally. Are the field values that same?
+
 `true` : `employee2.equals(employee3)` <- checks for equality structurally. Are the field values that same?
 
 But in Kotlin, the same comparisons will give the following results
