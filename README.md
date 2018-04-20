@@ -12,6 +12,8 @@ One of Kotlin's goals is terseness. Hence, no “new” needed to create a new i
 
 ## Some differences between Java and Kotlin
 
+### Comparing objects
+
 In Java, the following snippet of code:
 
 ```
@@ -40,3 +42,29 @@ But in Kotlin, the same comparisons will give the following results
 
 `true` : `employee2.equals(employee3)` <- checks for equality structurally. Are the field values that same?
 
+#### Wait, so how do I check for *referential* equality in Kotlin?
+
+Triple equals is your new friend for that:
+
+```
+false: employee1 === employee2
+false: employee2 === employee3
+```
+
+Unlike the `==` operator, the `===` will check the references themselves to see if
+it is the same instance
+
+### Where can a function be declared?
+
+- In Java, a function can only be declared *inside of a class*. 
+
+- In Kotlin, a function can be declared independently from a class
+
+Example:
+
+```
+
+
+
+
+```
