@@ -33,7 +33,10 @@ Would evaluate like so:
 But in Kotlin, the same comparisons will give the following results
 
 `false`: `employee1 == employee2` <- actually defers to `.equals` for the comparison
+
 `true` : `employee2 == employee3` <- actually defers to `.equals` for the comparison
+
 `false` : `employee1.equals(employee2)` <- checks for equality structurally. Are the field values that same?
+
 `true` : `employee2.equals(employee3)` <- checks for equality structurally. Are the field values that same?
 
