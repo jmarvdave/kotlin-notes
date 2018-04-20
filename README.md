@@ -63,8 +63,11 @@ it is the same instance
 Example:
 
 ```
+package testing
 
-
-
-
+fun main(args: Array<String>) {
+    println("Hello Kotlin World")
+}
 ```
+
+That is a totally valid function declaration that will run independent of a class
