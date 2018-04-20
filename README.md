@@ -1,5 +1,11 @@
 # kotlin-notes
 
+## Disclaimer
+
+The following notes have been gathered from different sources and mixed with
+personal experience. I do not claim to own any of the following content nor do I require
+explicit mentioning of my name if any of this is used by another party.
+
 ## Kotlin’s philosophy
 
 One of Kotlin's goals is terseness. Hence, no “new” needed to create a new instance of an object, no semicolons needed, and for basic operations there are no imports required because that’s included in the kotlin standard library. Unlike some other languages, Kotlin was not built as a language to do computer science research with but rather to save the programmer time and make the process of coding more efficient.
@@ -25,3 +31,9 @@ Would evaluate like so:
 `true` : `employee2.equals(employee3)` <- checks for equality structurally. Are the field values that same?
 
 But in Kotlin, the same comparisons will give the following results
+
+`false`: `employee1 == employee2` <- actually defers to `.equals` for the comparison
+`true` : `employee2 == employee3` <- actually defers to `.equals` for the comparison
+`false` : `employee1.equals(employee2)` <- checks for equality structurally. Are the field values that same?
+`true` : `employee2.equals(employee3)` <- checks for equality structurally. Are the field values that same?
+
