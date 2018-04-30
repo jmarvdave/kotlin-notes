@@ -101,3 +101,7 @@ in a string for any purpose
 
     println("I have $myMoney dollars. That is ${myMoney*100/moneyBillGatesHas} of what Bill Gates has")
 ```
+
+This will return something like:
+
+`I have 3.45 dollars. That is 0.006899994480004416 of what Bill Gates has`
