@@ -89,3 +89,15 @@ That is a totally valid function declaration that will run independent of a clas
 
 - To then cast this, use the `as` keyword like used above
 - Note: The `as` isn't really needed, as the compiler takes care of that for you (this is called `Smart Casting`)
+
+## Injecting variables into a string using `$` and doing operations on them
+
+- As you can see from the following snippet, it's simple to declare variables and them used them
+in a string for any purpose
+
+```
+    val myMoney = 3.45
+    val moneyBillGatesHas = 50000.04
+
+    println("I have $myMoney dollars. That is ${myMoney*100/moneyBillGatesHas} of what Bill Gates has")
+```
