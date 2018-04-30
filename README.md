@@ -71,3 +71,21 @@ fun main(args: Array<String>) {
 ```
 
 That is a totally valid function declaration that will run independent of a class
+
+### How can I cast and check if it's an instance of a class in Kotlin?
+
+- In Kotlin, to check if an object is an instance of a certain class, use `is`
+
+```
+    val employee1 = Employee("James", 28)
+    val employee2: Any = employee1
+
+    if (employee2 is Employee) {
+        val castedEmployee = employee2 as Employee
+        println(castedEmployee.name)
+        println("no way! Let's throw a party!")
+    }
+```
+
+- To then cast this, use the `as` keyword like used above
+- Note: The `as` isn't really needed, as the compiler takes care of that for you (this is called `Smart Casting`)
